@@ -1,0 +1,66 @@
+#ContactForm {
+    position: relative;
+    margin-top: 120px;
+}
+
+#ContactForm::before {
+    content: '';
+    position: absolute;
+    background-image: url(http://localhost:3000/static/media/contactForm.b8bd9d76e73eef4bc810.png);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    filter: blur(1px) brightness(0.5);
+}
+
+#ContactForm .inside {
+    padding: 120px 50px;
+}
+
+#ContactForm .main-wrapper {
+    border-radius: 80px;
+    padding: 65px;
+    width: 50%;
+    box-shadow: 0 0 5px 5px #00000020;
+    backdrop-filter: blur(3px);
+    background-color: #ffffff85;
+    margin-inline: auto;
+}
+
+#ContactForm .content {
+    text-align: center;
+}
+
+#ContactForm .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 80px;
+    max-width: 75%;
+    margin: auto;
+}
+
+#ContactForm .form-card {
+    display: flex;
+    flex-direction: column;
+}
+
+#ContactForm .form-card input,
+#ContactForm .form-card textarea {
+    font-size: 20px;
+    line-height: normal;
+    transition: var(--am-Transition);
+}
+
+#ContactForm .form-card input:hover,
+#ContactForm .form-card textarea:hover {
+    transform: translateY(-5px);
+}
+
+#ContactForm .btn-wrap {
+    text-align: center;
+    padding-top: 10px;
+}
